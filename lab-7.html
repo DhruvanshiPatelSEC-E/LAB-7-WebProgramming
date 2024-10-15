@@ -1,0 +1,100 @@
+<html lang="en">
+<head>
+<style>
+      
+      body {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-style: italic;
+        background-color: #e2a1cf;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+       
+      }
+      
+      .container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+        width: 100%;
+        text-align: center;
+      }
+      
+      h1 {
+        color: #333;
+        margin-bottom: 20px;
+      }
+      
+      #task-form {
+        display: flex;
+        justify-content: space-between;
+      }
+      
+      #task-input {
+        flex: 1;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-right: 10px;
+      }
+      
+      button {
+        padding: 10px 20px;
+        background-color: #7e1362;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      
+      button:hover {
+        background-color: #e2a1cf;
+      }
+      
+      #task-list {
+        list-style-type: none;
+        margin-top: 20px;
+      }
+      
+      #task-list li {
+        background-color: #f9f9f9;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        margin-bottom: 10px;
+      }
+
+      .delete-btn {
+  background-color: #e2a1cf;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: #e2a1cf;
+}
+      </style>
+      
+  <title>TO DO LIST</title>
+</head>
+<body>
+  <div class="container">
+    <h1>TO TO DO</h1>
+    <form id="task-form">
+      <input type="text" id="task-input" placeholder="Add a new task" required>
+      <button type="submit">Add Task</button>
+    </form>
+    <ul id="task-list">
+      <!-- Tasks will be added here dynamically -->
+    </ul>
+  </div>
+
+  <script src="lab-7.js"></script>
+</body>
+</html>
